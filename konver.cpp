@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-    int jam, menit, detik, sisa;
+    int itsJam, itsMenit, itsDetik, itsSisa;
 
     cout << "Masukkan bilangan >1 (satuan detik) : ";
-    cin >> detik;
+    cin >> itsDetik;
 
-    jam = detik / 3600;  //karena 1 jam = 3600 detik
-    sisa = detik % 3600; 
-    menit = sisa / 60;    //karena 1 menit = 60 detik
-    sisa = sisa % 60;
+    itsJam = itsDetik / 3600;  //karena 1 jam itu sama dengan 3600 detik
+    itsSisa = itsDetik % 3600; 
+    itsMenit = itsSisa / 60;    //karena 1 menit itu sama dengan 60 detik
+    itsSisa = itsSisa % 60;
 
-    cout << "Hasil konversi: " << jam << " jam, " << menit << " menit, " << sisa << " detik" << endl;
+    cout << "Hasil konversi: " << itsJam << " jam, " << itsMenit << " menit, " << itsSisa << " detik" << endl;
 
     return 0;
 }
